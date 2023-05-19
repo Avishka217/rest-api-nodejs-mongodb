@@ -8,11 +8,13 @@ mongoose.set("useFindAndModify", false);
 
 // Book Schema
 function BookData(data) {
+
 	this.id = data._id;
 	this.title= data.title;
 	this.description = data.description;
 	this.isbn = data.isbn;
 	this.createdAt = data.createdAt;
+	
 }
 
 /**
